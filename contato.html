@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Astra Hardware</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="menu-left">
+                <a class="menu-item" href="portfolio.html">Portfólio</a>
+                <a class="menu-item" href="quem-somos.html">Quem Somos</a>
+            </div>
+            
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Astra Hardware" class="logo">
+                </a>
+            </div>
+            
+            <div class="menu-right">
+                <a class="menu-item" href="trabalhe-conosco.html">Trabalhe Conosco</a>
+                <a class="menu-item" href="contato.html">Contato</a>
+                <a class="menu-item login-btn" href="#">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Entre em Contato</h1>
+
+        <section class="contact-section">
+            <div class="contact-info">
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <h3>Suporte Técnico</h3>
+                        <p>Email: <a href="mailto:suporte@astrahardware.com.br">suporte@astrahardware.com.br</a></p>
+                        <p>Telefone: (11) 3333-4444</p>
+                        <p>Horário: Segunda a Sexta, 8h às 18h</p>
+                    </div>
+
+                    <div class="contact-method">
+                        <h3>Vendas Corporativas</h3>
+                        <p>Email: <a href="mailto:vendas@astrahardware.com.br">vendas@astrahardware.com.br</a></p>
+                        <p>Telefone: (11) 3333-5555</p>
+                        <p>Horário: Segunda a Sexta, 9h às 17h</p>
+                    </div>
+                </div>
+
+                <h2>Localização</h2>
+                <address>
+                    Av. Tecnologia, 1400 - 9º andar<br>
+                    Bairro Vila Digital<br>
+                    São Paulo - SP<br>
+                    CEP: 04538-132
+                </address>
+            </div>
+
+            <form class="form-contato">
+                <h2>Formulário de Contato</h2>
+                
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto">
+                    <option>Suporte Técnico</option>
+                    <option>Informações</option>
+                    <option>RH</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                
+                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>ATENDIMENTO AO CLIENTE</h3>
+                <ul>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="#">Minha Conta</a></li>
+                    <li><a href="#">Envio e Devoluções</a></li>
+                    <li><a href="#">Garantia</a></li>
+                    <li><a href="#">Suporte Técnico</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>SOBRE</h3>
+                <ul>
+                    <li><a href="quem-somos.html">A Empresa</a></li>
+                    <li><a href="#">História</a></li>
+                    <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                    <li><a href="portfolio.html">Produtos</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>COMUNIDADE</h3>
+                <ul>
+                    <li><a href="https://instagram.com/astra" target="_blank">Instagram</a></li>
+                    <li><a href="https://facebook.com/astra" target="_blank">Facebook</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>NEWSLETTER</h3>
+                <p>Receba novidades e ofertas exclusivas.</p>
+                <form class="footer-form">
+                    <input type="email" placeholder="Seu e-mail">
+                    <button type="submit" class="btn-submit">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>© 2025 Astra Hardware. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Raí Moratto</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
