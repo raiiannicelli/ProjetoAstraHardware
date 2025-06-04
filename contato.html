@@ -4,29 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Astra Hardware</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <nav class="container">
-            <div class="menu-left">
+        <nav class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+            <div class="menu-left" style="display: flex; gap: 16px;">
+                <a class="menu-item" href="index.html">Home</a>
                 <a class="menu-item" href="portfolio.html">Portfólio</a>
                 <a class="menu-item" href="quem-somos.html">Quem Somos</a>
-            </div>
-            
-            <div class="logo-container">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="Astra Hardware" class="logo">
-                </a>
-            </div>
-            
-            <div class="menu-right">
                 <a class="menu-item" href="trabalhe-conosco.html">Trabalhe Conosco</a>
-                <a class="menu-item active" href="contato.html">Contato</a>
-                <a class="menu-item login-btn" href="#">Login</a>
+                <a class="menu-item" href="contato.html">Contato</a>
+            </div>
+            <div class="logo-container" style="margin-left: auto;">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Astra Hardware" class="logo" style="height:48px; width:auto;">
+                </a>
             </div>
         </nav>
     </header>
@@ -34,8 +27,8 @@
     <main class="container">
         <h1>Entre em Contato</h1>
 
-        <section class="contact-section">
-            <div class="contact-info">
+        <section class="contact-section" style="display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap;">
+            <div class="contact-info" style="flex: 1 1 250px; min-width: 220px;">
                 
                 <div class="contact-methods">
                     <div class="contact-method">
@@ -53,8 +46,8 @@
                     </div>
                 </div>
 
-                <h2>Localização</h2>
                 <address>
+                    <h2 style="margin-top:0;">Localização</h2>
                     Av. Tecnologia, 1400 - 9º andar<br>
                     Bairro Vila Digital<br>
                     São Paulo - SP<br>
@@ -62,7 +55,7 @@
                 </address>
             </div>
 
-            <form class="form-contato">
+            <form class="form-contato" style="flex: 2 1 400px; min-width: 300px;">
                 <h2>Formulário de Contato</h2>
                 
                 <label for="nome">Nome completo:</label>

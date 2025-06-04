@@ -4,92 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quem Somos - Astra Hardware</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <nav class="container">
-            <div class="menu-left">
+        <nav class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+            <div class="menu-left" style="display: flex; gap: 16px;">
+                <a class="menu-item" href="index.html">Home</a>
                 <a class="menu-item" href="portfolio.html">Portfólio</a>
-                <a class="menu-item active" href="quem-somos.html">Quem Somos</a>
-            </div>
-            
-            <div class="logo-container">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="Astra Hardware" class="logo">
-                </a>
-            </div>
-            
-            <div class="menu-right">
+                <a class="menu-item" href="quem-somos.html">Quem Somos</a>
                 <a class="menu-item" href="trabalhe-conosco.html">Trabalhe Conosco</a>
                 <a class="menu-item" href="contato.html">Contato</a>
-                <a class="menu-item login-btn" href="#">Login</a>
+            </div>
+            <div class="logo-container" style="margin-left: auto;">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Astra Hardware" class="logo" style="height:48px; width:auto;">
+                </a>
             </div>
         </nav>
     </header>
 
     <main class="container">
         <h1>Quem Somos</h1>
-        
-        <section class="about-section">
-            <h2>Nossa História</h2>
-            <p>
-                Fundada em 2020, a Astra Hardware nasceu do sonho de revolucionar o mercado brasileiro de componentes de computador. 
-                Nossa jornada começou com um grupo de engenheiros apaixonados por tecnologia, que identificaram a necessidade 
-                de produtos de alta performance com suporte local e garantia nacional.
-            </p>
-            <p>
-                Ao longo dos anos, estabelecemos parcerias estratégicas com fabricantes internacionais e desenvolvemos nossa 
-                própria linha de produtos, sempre priorizando a qualidade e a inovação. Hoje, somos referência no mercado 
-                de hardware, com presença em todo o território nacional.
-            </p>
+        <div class="location-form-wrapper" style="display: flex; align-items: flex-start; gap: 40px; flex-wrap: wrap;">
+            <div class="location-block" style="flex: 1 1 250px; min-width: 220px;">
 
-            <h2>Missão</h2>
-            <p>
-                Desenvolver e disponibilizar soluções de hardware de alta performance, garantindo qualidade, 
-                suporte excepcional e contribuindo para o avanço tecnológico do Brasil.
-            </p>
-
-            <h2>Valores</h2>
-            <ul class="values-list">
-                <li>Excelência em qualidade</li>
-                <li>Inovação constante</li>
-                <li>Compromisso com o cliente</li>
-                <li>Sustentabilidade</li>
-                <li>Desenvolvimento nacional</li>
-            </ul>
-        </section>
-
-        <section class="contact-section">
-            <h2>Contato Presencial</h2>
-            <p>
-                Av. Tecnologia, 1500 - 10º andar<br>
-                Bairro Vila Digital<br>
-                São Paulo - SP<br>
-                CEP: 04538-132
-            </p>
-
-            <h2>E-mail</h2>
-            <p>
-                <a href="mailto:contato@astrahardware.com.br" class="contact-link">contato@astrahardware.com.br</a>
-            </p>
-
-            <h2>Redes Sociais</h2>
-            <div class="social-links">
-                <a href="https://facebook.com/astra" target="_blank" aria-label="Facebook - Perfil Oficial da Astra Hardware">
-                    <img src="img/facebook-icon.png" alt="Ícone Facebook" class="img-rounded" width="32" height="32">
-                </a>
-                <a href="https://instagram.com/astra" target="_blank" aria-label="Instagram - Siga a Astra Hardware">
-                    <img src="img/instagram-icon.png" alt="Ícone Instagram" class="img-rounded" width="32" height="32">
-                </a>
-                <a href="https://linkedin.com/company/astra" target="_blank" aria-label="LinkedIn - Página Corporativa da Astra Hardware">
-                    <img src="img/linkedin-icon.png" alt="Ícone LinkedIn" class="img-rounded" width="32" height="32">
-                </a>
             </div>
-        </section>
+                <section class="about-section">
+                    <h2>Nossa História</h2>
+                    <p>
+                        Fundada em 2020, a Astra Hardware nasceu do sonho de revolucionar o mercado brasileiro de componentes de computador. 
+                        Nossa jornada começou com um grupo de engenheiros apaixonados por tecnologia, que identificaram a necessidade 
+                        de produtos de alta performance com suporte local e garantia nacional.
+                    </p>
+                    <p>
+                        Ao longo dos anos, estabelecemos parcerias estratégicas com fabricantes internacionais e desenvolvemos nossa 
+                        própria linha de produtos, sempre priorizando a qualidade e a inovação. Hoje, somos referência no mercado 
+                        de hardware, com presença em todo o território nacional.
+                    </p>
+
+                    <h2>Missão</h2>
+                    <p>
+                        Desenvolver e disponibilizar soluções de hardware de alta performance, garantindo qualidade, 
+                        suporte excepcional e contribuindo para o avanço tecnológico do Brasil.
+                    </p>
+
+                </section>
+
+                <section class="contact-section">
+
+                </section>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -104,7 +70,6 @@
                     <li><a href="#">Suporte Técnico</a></li>
                 </ul>
             </div>
-            
             <div class="footer-column">
                 <h3>SOBRE</h3>
                 <ul>
@@ -114,17 +79,15 @@
                     <li><a href="portfolio.html">Produtos</a></li>
                 </ul>
             </div>
-            
             <div class="footer-column">
                 <h3>COMUNIDADE</h3>
                 <ul>
-                    <li><a href="https://instagram.com/astra" target="_blank">Instagram</a></li>
-                    <li><a href="https://facebook.com/astra" target="_blank">Facebook</a></li>
+                    <li><a href="https://instagram.com/astra" target="_blank" aria-label="Instagram - Siga a Astra Hardware">Instagram</a></li>
+                    <li><a href="https://facebook.com/astra" target="_blank" aria-label="Facebook - Perfil Oficial da Astra Hardware">Facebook</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Newsletter</a></li>
                 </ul>
             </div>
-
             <div class="footer-column">
                 <h3>NEWSLETTER</h3>
                 <p>Receba novidades e ofertas exclusivas.</p>
@@ -134,7 +97,6 @@
                 </form>
             </div>
         </div>
-
         <div class="footer-bottom">
             <div class="copyright">
                 <p>© 2025 Astra Hardware. Todos os direitos reservados.</p>

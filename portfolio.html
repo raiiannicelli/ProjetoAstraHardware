@@ -10,23 +10,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="menu-left">
-                <a class="menu-item active" href="portfolio.html">Portfólio</a>
+       <header>
+        <nav class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+            <div class="menu-left" style="display: flex; gap: 16px;">
+                <a class="menu-item" href="index.html">Home</a>
+                <a class="menu-item" href="portfolio.html">Portfólio</a>
                 <a class="menu-item" href="quem-somos.html">Quem Somos</a>
-            </div>
-            
-            <div class="logo-container">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="Astra Hardware" class="logo">
-                </a>
-            </div>
-            
-            <div class="menu-right">
                 <a class="menu-item" href="trabalhe-conosco.html">Trabalhe Conosco</a>
                 <a class="menu-item" href="contato.html">Contato</a>
-                <a class="menu-item login-btn" href="#">Login</a>
+            </div>
+            <div class="logo-container" style="margin-left: auto;">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Astra Hardware" class="logo" style="height:48px; width:auto;">
+                </a>
             </div>
         </nav>
     </header>
@@ -105,6 +101,25 @@
                 <a class="btn btn-primary" href="portfolio.html">Saiba mais</a>
             </div>
         </div>
+
+        <nav class="pagination" aria-label="Navegação das páginas">
+            <a href="#" class="pagination__item pagination__item--disabled" aria-label="Página anterior" tabindex="-1">
+                &lt;
+            </a>
+            <a href="#" class="pagination__item pagination__item--active" aria-current="page">
+                1
+            </a>
+            <a href="#" class="pagination__item">
+                2
+            </a>
+            <a href="#" class="pagination__item">
+                3
+            </a>
+            <a href="#" class="pagination__item" aria-label="Próxima página">
+                &gt;
+            </a>
+        </nav>
+
     </main>
 
     <footer>
@@ -157,5 +172,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/navigation.js"></script>
 </body>
 </html>

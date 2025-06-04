@@ -10,23 +10,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="menu-left">
+        <header>
+        <nav class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+            <div class="menu-left" style="display: flex; gap: 16px;">
+                <a class="menu-item" href="index.html">Home</a>
                 <a class="menu-item" href="portfolio.html">Portfólio</a>
                 <a class="menu-item" href="quem-somos.html">Quem Somos</a>
-            </div>
-            
-            <div class="logo-container">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="Astra Hardware" class="logo">
-                </a>
-            </div>
-            
-            <div class="menu-right">
-                <a class="menu-item active" href="trabalhe-conosco.html">Trabalhe Conosco</a>
+                <a class="menu-item" href="trabalhe-conosco.html">Trabalhe Conosco</a>
                 <a class="menu-item" href="contato.html">Contato</a>
-                <a class="menu-item login-btn" href="#">Login</a>
+            </div>
+            <div class="logo-container" style="margin-left: auto;">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Astra Hardware" class="logo" style="height:48px; width:auto;">
+                </a>
             </div>
         </nav>
     </header>
@@ -42,19 +38,6 @@
                 comprometida com a excelência e o desenvolvimento tecnológico nacional.
             </p>
         </div>
-
-        <section>
-            <h2>Requisitos Gerais</h2>
-            <ul class="requirements-list">
-                <li>Formação superior em Engenharia Eletrônica, Ciência da Computação, ou áreas correlatas</li>
-                <li>Experiência comprovada em desenvolvimento de hardware ou software embarcado</li>
-                <li>Conhecimento em ferramentas de design e simulação de circuitos</li>
-                <li>Familiaridade com protocolos de comunicação (PCIe, USB, SATA)</li>
-                <li>Inglês técnico avançado</li>
-                <li>Capacidade de trabalhar em equipe e boa comunicação</li>
-                <li>Proatividade e disposição para aprender novas tecnologias</li>
-            </ul>
-        </section>
 
         <section>
             <h2>Como se Candidatar</h2>
@@ -73,13 +56,13 @@
                 
                 <label for="area">Área de Interesse:</label>
                 <select id="area" name="area">
-                    <option>Engenharia de Hardware</option>
-                    <option>Desenvolvimento de Firmware</option>
+                    <option>Desenvolvedor Front-End</option>
+                    <option>Analista UX/UI</option>
                     <option>Controle de Qualidade (QA)</option>
                     <option>Design de Produto</option>
                     <option>Marketing</option>
                 </select>
-
+        
                 <label for="experiencia">Experiência:</label>
                 <select id="experiencia" name="experiencia">
                     <option>Júnior (0-2 anos)</option>
