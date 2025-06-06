@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Astra Hardware</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -24,61 +26,100 @@
         </nav>
     </header>
 
-    <main class="container">
+    <main>
+        <div class="container">
+            <!-- Contact Section -->
+            <section class="contact-section" style="display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap; margin: 60px 0;">
+                <!-- Contact Info -->
+                <div class="contact-info" style="flex: 1 1 300px; min-width: 280px;">
+                    <div class="contact-methods">
+                        <div class="contact-method" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+                            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                                <i class="fas fa-headset" style="font-size: 24px; color: var(--cor-primaria);"></i>
+                                <h3 style="margin: 0;">Suporte Técnico</h3>
+                            </div>
+                            <p><i class="fas fa-envelope" style="color: var(--cor-primaria); margin-right: 10px;"></i> <a href="mailto:suporte@astrahardware.com.br">suporte@astrahardware.com.br</a></p>
+                            <p><i class="fas fa-phone" style="color: var(--cor-primaria); margin-right: 10px;"></i> (11) 3333-4444</p>
+                            <p><i class="fas fa-clock" style="color: var(--cor-primaria); margin-right: 10px;"></i> Segunda a Sexta, 8h às 18h</p>
+                        </div>
 
-        <section class="contact-section" style="display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap;">
-            <div class="contact-info" style="flex: 1 1 250px; min-width: 220px;">
-                
-                <div class="contact-methods">
-                    <div class="contact-method">
-                        <h3>Suporte Técnico</h3>
-                        <p>Email: <a href="mailto:suporte@astrahardware.com.br">suporte@astrahardware.com.br</a></p>
-                        <p>Telefone: (11) 3333-4444</p>
-                        <p>Horário: Segunda a Sexta, 8h às 18h</p>
+                        <div class="contact-method" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                                <i class="fas fa-building" style="font-size: 24px; color: var(--cor-primaria);"></i>
+                                <h3 style="margin: 0;">Vendas Corporativas</h3>
+                            </div>
+                            <p><i class="fas fa-envelope" style="color: var(--cor-primaria); margin-right: 10px;"></i> <a href="mailto:vendas@astrahardware.com.br">vendas@astrahardware.com.br</a></p>
+                            <p><i class="fas fa-phone" style="color: var(--cor-primaria); margin-right: 10px;"></i> (11) 3333-5555</p>
+                            <p><i class="fas fa-clock" style="color: var(--cor-primaria); margin-right: 10px;"></i> Segunda a Sexta, 9h às 17h</p>
+                        </div>
                     </div>
 
-                    <div class="contact-method">
-                        <h3>Vendas Corporativas</h3>
-                        <p>Email: <a href="mailto:vendas@astrahardware.com.br">vendas@astrahardware.com.br</a></p>
-                        <p>Telefone: (11) 3333-5555</p>
-                        <p>Horário: Segunda a Sexta, 9h às 17h</p>
+                    <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+                        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                            <i class="fas fa-map-marker-alt" style="font-size: 24px; color: var(--cor-primaria);"></i>
+                            <h3 style="margin: 0;">Localização</h3>
+                        </div>
+                        <address style="font-style: normal;">
+                            <p><i class="fas fa-building" style="color: var(--cor-primaria); margin-right: 10px;"></i> Bairro Vila Digital</p>
+                            <p><i class="fas fa-city" style="color: var(--cor-primaria); margin-right: 10px;"></i> São Paulo - SP</p>
+                            <p><i class="fas fa-map-pin" style="color: var(--cor-primaria); margin-right: 10px;"></i> CEP: 04538-132</p>
+                        </address>
                     </div>
                 </div>
 
-                <address>
-                    <h2 style="margin-top:0;">Localização</h2>
-                    Bairro Vila Digital<br>
-                    São Paulo - SP<br>
-                    CEP: 04538-132
-                </address>
-            </div>
+                <!-- Contact Form -->
+                <form class="form-contato" style="flex: 2 1 400px; min-width: 300px; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <h2 style="margin-bottom: 30px; color: var(--cor-primaria);">Formulário de Contato</h2>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label for="nome" style="display: block; margin-bottom: 8px; font-weight: 500;">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 16px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label for="email" style="display: block; margin-bottom: 8px; font-weight: 500;">E-mail:</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 16px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label for="assunto" style="display: block; margin-bottom: 8px; font-weight: 500;">Assunto:</label>
+                        <select id="assunto" name="assunto" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 16px;">
+                            <option>Suporte Técnico</option>
+                            <option>RH</option>
+                            <option>Outros</option>
+                        </select>
+                    </div>
 
-            <form class="form-contato" style="flex: 2 1 400px; min-width: 300px;">
-                <h2>Formulário de Contato</h2>
-                
-                <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="nome" required>
-                
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="assunto">Assunto:</label>
-                <select id="assunto" name="assunto">
-                    <option>Suporte Técnico</option>
-                    <option>RH</option>
-                </select>
+                    <div style="margin-bottom: 30px;">
+                        <label for="mensagem" style="display: block; margin-bottom: 8px; font-weight: 500;">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 16px; resize: vertical;"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px; font-size: 16px; font-weight: 600;">
+                        <i class="fas fa-paper-plane" style="margin-right: 10px;"></i>Enviar Mensagem
+                    </button>
+                </form>
+            </section>
 
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                
-                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-            </form>
-        </section>
+            <!-- Map Section -->
+            <section style="margin: 60px 0;">
+                <h2 style="text-align: center; margin-bottom: 30px;">Nossa Localização</h2>
+                <div style="width: 100%; height: 400px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.471474814564!2d-46.6820623!3d-23.5872283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5744e0ebff5b%3A0x769bf4a32f914782!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1647881234567!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </section>
+        </div>
     </main>
 
-     <footer>
+    <footer>
         <div class="footer-columns"></div>
-
         <div class="footer-bottom">
             <div class="copyright">
                 <p>© 2025 Astra Hardware. Todos os direitos reservados.</p>

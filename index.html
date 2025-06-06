@@ -8,46 +8,180 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header style="background: var(--cor-primaria); padding: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
         <nav class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 24px;">
-            <div class="menu-left" style="display: flex; gap: 16px;">
-                <a class="menu-item" href="index.html">Home</a>
-                <a class="menu-item" href="portfolio.html">Portfólio</a>
-                <a class="menu-item" href="quem-somos.html">Quem Somos</a>
-                <a class="menu-item" href="trabalhe-conosco.html">Trabalhe Conosco</a>
-                <a class="menu-item" href="contato.html">Contato</a>
+            <div class="menu-left" style="display: flex; gap: 24px;">
+                <a class="menu-item" href="index.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Home</a>
+                <a class="menu-item" href="portfolio.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Portfólio</a>
+                <a class="menu-item" href="quem-somos.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Quem Somos</a>
+                <a class="menu-item" href="trabalhe-conosco.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Trabalhe Conosco</a>
+                <a class="menu-item" href="contato.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Contato</a>
             </div>
             <div class="logo-container" style="margin-left: auto;">
                 <a href="index.html">
-                    <img src="img/logo.png" alt="Astra Hardware" class="logo" style="height:48px; width:auto;">
+                    <img src="img/logo.png" alt="Astra Hardware" class="logo" style="height: 80px; width: auto;">
                 </a>
             </div>
         </nav>
     </header>
 
-    <main class="container">
-        <section class="company-intro">
-            <p>
+    <main>
+        <!-- Featured Categories -->
+        <section style="padding: 80px 0; background: var(--cor-fundo);">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 40px; color: var(--cor-primaria);">
+                    <i class="fas fa-microchip" style="margin-right: 10px;"></i>
+                    Categorias em Destaque
+                </h2>
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+                    <a href="portfolio.html" style="text-decoration: none; color: inherit;">
+                        <div style="background: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
+                            <i class="fas fa-microchip" style="font-size: 2rem; color: var(--cor-primaria); margin-bottom: 15px;"></i>
+                            <h3>Processadores</h3>
+                        </div>
+                    </a>
+                    <a href="portfolio.html" style="text-decoration: none; color: inherit;">
+                        <div style="background: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
+                            <i class="fas fa-desktop" style="font-size: 2rem; color: var(--cor-primaria); margin-bottom: 15px;"></i>
+                            <h3>Placas de Vídeo</h3>
+                        </div>
+                    </a>
+                    <a href="portfolio.html" style="text-decoration: none; color: inherit;">
+                        <div style="background: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
+                            <i class="fas fa-memory" style="font-size: 2rem; color: var(--cor-primaria); margin-bottom: 15px;"></i>
+                            <h3>Memória RAM</h3>
+                        </div>
+                    </a>
+                    <a href="portfolio.html" style="text-decoration: none; color: inherit;">
+                        <div style="background: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
+                            <i class="fas fa-hdd" style="font-size: 2rem; color: var(--cor-primaria); margin-bottom: 15px;"></i>
+                            <h3>Armazenamento</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section id="produtos" style="padding: 60px 0; position: relative;">
+            <div class="container" style="position: relative; z-index: 1;">
+                <h2 style="text-align: center; margin-bottom: 40px; color: var(--cor-primaria);">
+                    <i class="fas fa-star" style="margin-right: 10px;"></i>
+                    Produtos em Destaque
+                </h2>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                    <!-- Product Card 1 -->
+                    <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column;">
+                        <a href="portfolio.html" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1;">
+                            <div style="height: 200px; display: flex; justify-content: center; align-items: center; padding: 20px;">
+                                <img src="img/produto5.png" alt="Processador" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                            </div>
+                            <div style="padding: 20px; display: flex; flex-direction: column; flex: 1;">
+                                <h3 style="margin-bottom: 10px;">Processador Intel i9</h3>
+                                <p style="color: var(--cor-texto); margin-bottom: 15px; flex: 1;">Processador de última geração com 16 núcleos</p>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                                    <span style="font-size: 1.2rem; font-weight: 600; color: var(--cor-primaria);">R$ 4.999,00</span>
+                                    <a href="portfolio.html" class="btn btn-primary" style="margin: 0;">Ver Detalhes</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column;">
+                        <a href="portfolio.html" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1;">
+                            <div style="height: 200px; display: flex; justify-content: center; align-items: center; padding: 20px;">
+                                <img src="img/produto6.png" alt="Placa de Vídeo" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                            </div>
+                            <div style="padding: 20px; display: flex; flex-direction: column; flex: 1;">
+                                <h3 style="margin-bottom: 10px;">RTX 4090</h3>
+                                <p style="color: var(--cor-texto); margin-bottom: 15px; flex: 1;">Placa de vídeo topo de linha para jogos</p>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                                    <span style="font-size: 1.2rem; font-weight: 600; color: var(--cor-primaria);">R$ 12.999,00</span>
+                                    <a href="portfolio.html" class="btn btn-primary" style="margin: 0;">Ver Detalhes</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column;">
+                        <a href="portfolio.html" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1;">
+                            <div style="height: 200px; display: flex; justify-content: center; align-items: center; padding: 20px;">
+                                <img src="img/produto8.png" alt="Processador AMD" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                            </div>
+                            <div style="padding: 20px; display: flex; flex-direction: column; flex: 1;">
+                                <h3 style="margin-bottom: 10px;">Processador AMD Ryzen 9 7950X</h3>
+                                <p style="color: var(--cor-texto); margin-bottom: 15px; flex: 1;">Processador de alta performance com 16 núcleos</p>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                                    <span style="font-size: 1.2rem; font-weight: 600; color: var(--cor-primaria);">R$ 5.499,00</span>
+                                    <a href="portfolio.html" class="btn btn-primary" style="margin: 0;">Ver Detalhes</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Intro -->
+        <section style="padding: 60px 0; background: var(--cor-fundo);">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <h2 style="color: var(--cor-primaria); margin-bottom: 30px;">
+                        <i class="fas fa-building" style="margin-right: 10px;"></i>
+                        Sobre a Astra Hardware
+                    </h2>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--cor-texto); margin-bottom: 20px;">
                 A Astra é uma empresa brasileira especializada no desenvolvimento e comercialização de hardware de alto desempenho. 
                 Nossa missão é oferecer aos entusiastas e profissionais de tecnologia os melhores componentes do mercado, 
                 com foco em placas-mãe, processadores e placas de vídeo de última geração.
             </p>
-            <p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--cor-texto); margin-bottom: 30px;">
                 Fundada com o compromisso de excelência e inovação, nossos valores se baseiam na qualidade, 
                 confiabilidade e suporte ao cliente. Acreditamos que cada componente que produzimos 
                 contribui para impulsionar o futuro da tecnologia no Brasil.
             </p>
+                    <a href="portfolio.html" class="btn btn-primary" style="padding: 15px 30px; font-size: 1.1rem;">
+                        <i class="fas fa-box-open" style="margin-right: 10px;"></i>Ver Catálogo Completo
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section style="padding: 60px 0;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                    <div style="text-align: center; padding: 30px;">
+                        <i class="fas fa-truck" style="font-size: 2.5rem; color: var(--cor-primaria); margin-bottom: 20px;"></i>
+                        <h3>Entrega Rápida</h3>
+                        <p>Entrega em todo o Brasil com rastreamento</p>
+                    </div>
+                    <div style="text-align: center; padding: 30px;">
+                        <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: var(--cor-primaria); margin-bottom: 20px;"></i>
+                        <h3>Garantia Estendida</h3>
+                        <p>Garantia de 2 anos em todos os produtos</p>
+                    </div>
+                    <div style="text-align: center; padding: 30px;">
+                        <i class="fas fa-headset" style="font-size: 2.5rem; color: var(--cor-primaria); margin-bottom: 20px;"></i>
+                        <h3>Suporte 24/7</h3>
+                        <p>Atendimento técnico especializado</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
      <footer>
         <div class="footer-columns"></div>
-
         <div class="footer-bottom">
             <div class="copyright">
                 <p>© 2025 Astra Hardware. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Rai Moratto</p>
             </div>
         </div>
     </footer>

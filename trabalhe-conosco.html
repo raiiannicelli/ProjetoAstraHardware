@@ -8,76 +8,137 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-        <header>
+    <header style="background: var(--cor-primaria); padding: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
         <nav class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 24px;">
-            <div class="menu-left" style="display: flex; gap: 16px;">
-                <a class="menu-item" href="index.html">Home</a>
-                <a class="menu-item" href="portfolio.html">Portfólio</a>
-                <a class="menu-item" href="quem-somos.html">Quem Somos</a>
-                <a class="menu-item" href="trabalhe-conosco.html">Trabalhe Conosco</a>
-                <a class="menu-item" href="contato.html">Contato</a>
+            <div class="menu-left" style="display: flex; gap: 24px;">
+                <a class="menu-item" href="index.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Home</a>
+                <a class="menu-item" href="portfolio.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Portfólio</a>
+                <a class="menu-item" href="quem-somos.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Quem Somos</a>
+                <a class="menu-item" href="trabalhe-conosco.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Trabalhe Conosco</a>
+                <a class="menu-item" href="contato.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Contato</a>
             </div>
             <div class="logo-container" style="margin-left: auto;">
                 <a href="index.html">
-                    <img src="img/logo.png" alt="Astra Hardware" class="logo" style="height:48px; width:auto;">
+                    <img src="img/logo.png" alt="Astra Hardware" class="logo" style="height: 80px; width: auto;">
                 </a>
             </div>
         </nav>
     </header>
 
-    <main class="container">
-        <h1>Trabalhe Conosco</h1>
+    <main>
+        <div class="container">
+            <!-- Hero Section -->
+            <section style="text-align: center; padding: 60px 0;">
+                <h1 style="color: var(--cor-primaria); margin-bottom: 20px;">Trabalhe Conosco</h1>
+                <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto; color: var(--cor-texto);">
+                    Faça parte de uma equipe que está transformando o futuro da tecnologia no Brasil
+                </p>
+            </section>
 
-        <div class="career-intro">
-            <p>
-                A Astra Hardware está sempre em busca de talentos apaixonados por tecnologia e inovação. 
-                Procuramos engenheiros de hardware, desenvolvedores de firmware, especialistas em software, 
-                profissionais de marketing e designers que queiram fazer parte de uma equipe 
-                comprometida com a excelência e o desenvolvimento tecnológico nacional.
-            </p>
+            <!-- Career Intro -->
+            <section style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 40px;">
+                <div class="career-intro">
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--cor-texto);">
+                        A Astra Hardware está sempre em busca de talentos apaixonados por tecnologia e inovação. 
+                        Procuramos engenheiros de hardware, desenvolvedores de firmware, especialistas em software, 
+                        profissionais de marketing e designers que queiram fazer parte de uma equipe 
+                        comprometida com a excelência e o desenvolvimento tecnológico nacional.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Application Section -->
+            <section style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px;">
+                <!-- Application Info -->
+                <div style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <h2 style="color: var(--cor-primaria); margin-bottom: 20px;">Como se Candidatar</h2>
+                    <div style="margin-bottom: 30px;">
+                        <p style="margin-bottom: 15px;">
+                            <i class="fas fa-envelope" style="color: var(--cor-primaria); margin-right: 10px;"></i>
+                            Envie seu currículo para <a href="mailto:rh@astrahardware.com.br">rh@astrahardware.com.br</a>
+                        </p>
+                        <p style="margin-bottom: 15px;">
+                            <i class="fas fa-info-circle" style="color: var(--cor-primaria); margin-right: 10px;"></i>
+                            Assunto: "[Vaga] Nome do Candidato – Área de Interesse"
+                        </p>
+                    </div>
+
+                    <div style="background: var(--cor-fundo); padding: 20px; border-radius: 8px;">
+                        <h3 style="color: var(--cor-primaria); margin-bottom: 15px;">
+                            <i class="fas fa-check-circle" style="margin-right: 10px;"></i>
+                            Processo Seletivo
+                        </h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 10px;">
+                                <i class="fas fa-angle-right" style="color: var(--cor-primaria); margin-right: 10px;"></i>
+                                Análise do currículo
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <i class="fas fa-angle-right" style="color: var(--cor-primaria); margin-right: 10px;"></i>
+                                Entrevista inicial
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <i class="fas fa-angle-right" style="color: var(--cor-primaria); margin-right: 10px;"></i>
+                                Teste técnico
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right" style="color: var(--cor-primaria); margin-right: 10px;"></i>
+                                Entrevista final
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Application Form -->
+                <form class="form-contato" style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <h2 style="color: var(--cor-primaria); margin-bottom: 30px;">Formulário de Candidatura</h2>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label for="nome" style="display: block; margin-bottom: 8px; font-weight: 500;">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 16px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label for="email" style="display: block; margin-bottom: 8px; font-weight: 500;">E-mail:</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 16px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label for="area" style="display: block; margin-bottom: 8px; font-weight: 500;">Área de Interesse:</label>
+                        <select id="area" name="area" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 16px;">
+                            <option>Desenvolvedor Front-End</option>
+                            <option>Analista UX/UI</option>
+                            <option>Controle de Qualidade (QA)</option>
+                            <option>Design de Produto</option>
+                        </select>
+                    </div>
+            
+                    <div style="margin-bottom: 30px;">
+                        <label for="experiencia" style="display: block; margin-bottom: 8px; font-weight: 500;">Experiência:</label>
+                        <select id="experiencia" name="experiencia" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 16px;">
+                            <option>Júnior (0-2 anos)</option>
+                            <option>Pleno (2-5 anos)</option>
+                            <option>Sênior (5+ anos)</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px; font-size: 16px; font-weight: 600;">
+                        <i class="fas fa-paper-plane" style="margin-right: 10px;"></i>Enviar Candidatura
+                    </button>
+                </form>
+            </section>
         </div>
-
-        <section>
-            <h2>Como se Candidatar</h2>
-            <p>
-                Envie seu currículo para <a href="mailto:rh@astrahardware.com.br">rh@astrahardware.com.br</a> 
-                com o assunto "[Vaga] Nome do Candidato – Área de Interesse".
-            </p>
-            <form class="form-contato">
-                <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="nome" required>
-                
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="area">Área de Interesse:</label>
-                <select id="area" name="area">
-                    <option>Desenvolvedor Front-End</option>
-                    <option>Analista UX/UI</option>
-                    <option>Controle de Qualidade (QA)</option>
-                    <option>Design de Produto</option>
-                </select>
-        
-                <label for="experiencia">Experiência:</label>
-                <select id="experiencia" name="experiencia">
-                    <option>Júnior (0-2 anos)</option>
-                    <option>Pleno (2-5 anos)</option>
-                    <option>Sênior (5+ anos)</option>
-                </select>
-                
-                <button type="submit" class="btn btn-primary">Enviar Candidatura</button>
-            </form>
-        </section>
     </main>
 
-     <footer>
+    <footer>
         <div class="footer-columns"></div>
-
         <div class="footer-bottom">
             <div class="copyright">
                 <p>© 2025 Astra Hardware. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Rai Moratto</p>
             </div>
         </div>
     </footer>

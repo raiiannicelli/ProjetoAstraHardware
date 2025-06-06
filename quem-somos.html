@@ -4,66 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quem Somos - Astra Hardware</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header style="background: var(--cor-primaria); padding: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
         <nav class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 24px;">
-            <div class="menu-left" style="display: flex; gap: 16px;">
-                <a class="menu-item" href="index.html">Home</a>
-                <a class="menu-item" href="portfolio.html">Portfólio</a>
-                <a class="menu-item" href="quem-somos.html">Quem Somos</a>
-                <a class="menu-item" href="trabalhe-conosco.html">Trabalhe Conosco</a>
-                <a class="menu-item" href="contato.html">Contato</a>
+            <div class="menu-left" style="display: flex; gap: 24px;">
+                <a class="menu-item" href="index.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Home</a>
+                <a class="menu-item" href="portfolio.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Portfólio</a>
+                <a class="menu-item" href="quem-somos.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Quem Somos</a>
+                <a class="menu-item" href="trabalhe-conosco.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Trabalhe Conosco</a>
+                <a class="menu-item" href="contato.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Contato</a>
             </div>
             <div class="logo-container" style="margin-left: auto;">
                 <a href="index.html">
-                    <img src="img/logo.png" alt="Astra Hardware" class="logo" style="height:48px; width:auto;">
+                    <img src="img/logo.png" alt="Astra Hardware" class="logo" style="height: 80px; width: auto;">
                 </a>
             </div>
         </nav>
     </header>
 
-    <main class="container">
-        <h1>Quem Somos</h1>
-        <div class="location-form-wrapper" style="display: flex; align-items: flex-start; gap: 40px; flex-wrap: wrap;">
-            <div class="location-block" style="flex: 1 1 250px; min-width: 220px;">
+    <main>
+        <div class="container">
+            <!-- Hero Section -->
+            <section style="text-align: center; padding: 60px 0;">
+                <h1 style="color: var(--cor-primaria); margin-bottom: 20px;">Quem Somos</h1>
+                <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto; color: var(--cor-texto);">
+                    Conheça a história da Astra Hardware e nossa missão de transformar o mercado de tecnologia no Brasil
+                </p>
+            </section>
 
-            </div>
-                <section class="about-section">
-                    <h2>Nossa História</h2>
-                    <p>
-                        Fundada em 2020, a Astra Hardware nasceu do sonho de revolucionar o mercado brasileiro de componentes de computador. 
-                        Nossa jornada começou com um grupo de engenheiros apaixonados por tecnologia, que identificaram a necessidade 
-                        de produtos de alta performance com suporte local e garantia nacional.
-                    </p>
-                    <p>
-                        Ao longo dos anos, estabelecemos parcerias estratégicas com fabricantes internacionais e desenvolvemos nossa 
-                        própria linha de produtos, sempre priorizando a qualidade e a inovação. Hoje, somos referência no mercado 
-                        de hardware, com presença em todo o território nacional.
-                    </p>
+            <!-- Main Content -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px;">
+                <!-- Left Column - About Section -->
+                <section class="about-section" style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <h2 style="color: var(--cor-primaria); margin-bottom: 20px;">
+                        <i class="fas fa-history" style="margin-right: 10px;"></i>
+                        Nossa História
+                    </h2>
+                    <div style="margin-bottom: 30px;">
+                        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--cor-texto); margin-bottom: 20px;">
+                            Fundada para vencer a Astra Hardware nasceu do sonho de revolucionar o mercado brasileiro de componentes de computador. 
+                            Nossa jornada começou com um grupo de engenheiros apaixonados por tecnologia, que identificaram a necessidade 
+                            de produtos de alta performance com suporte local e garantia nacional.
+                        </p>
+                        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--cor-texto);">
+                            Ao longo dos anos, estabelecemos parcerias estratégicas com fabricantes internacionais e desenvolvemos nossa 
+                            própria linha de produtos, sempre priorizando a qualidade e a inovação. Hoje, somos referência no mercado 
+                            de hardware, com presença em todo o território nacional.
+                        </p>
+                    </div>
 
-                    <h2>Missão</h2>
-                    <p>
+                    <h2 style="color: var(--cor-primaria); margin-bottom: 20px;">
+                        <i class="fas fa-bullseye" style="margin-right: 10px;"></i>
+                        Missão
+                    </h2>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--cor-texto);">
                         Desenvolver e disponibilizar soluções de hardware de alta performance, garantindo qualidade, 
                         suporte excepcional e contribuindo para o avanço tecnológico do Brasil.
                     </p>
-
                 </section>
 
-                <section class="contact-section">
+                <!-- Right Column - Values and Achievements -->
+                <section style="display: flex; flex-direction: column; gap: 40px;">
+                    <!-- Values Card -->
+                    <div style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <h2 style="color: var(--cor-primaria); margin-bottom: 20px;">
+                            <i class="fas fa-star" style="margin-right: 10px;"></i>
+                            Nossos Valores
+                        </h2>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                                <i class="fas fa-check-circle" style="color: var(--cor-primaria); margin-right: 10px;"></i>
+                                <span>Inovação constante</span>
+                            </li>
+                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                                <i class="fas fa-check-circle" style="color: var(--cor-primaria); margin-right: 10px;"></i>
+                                <span>Qualidade superior</span>
+                            </li>
+                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                                <i class="fas fa-check-circle" style="color: var(--cor-primaria); margin-right: 10px;"></i>
+                                <span>Compromisso com o cliente</span>
+                            </li>
+                            <li style="display: flex; align-items: center;">
+                                <i class="fas fa-check-circle" style="color: var(--cor-primaria); margin-right: 10px;"></i>
+                                <span>Desenvolvimento sustentável</span>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <!-- Achievements Card -->
+                    <div style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <h2 style="color: var(--cor-primaria); margin-bottom: 20px;">
+                            <i class="fas fa-trophy" style="margin-right: 10px;"></i>
+                            Nossas Conquistas
+                        </h2>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 2.5rem; font-weight: 700; color: var(--cor-primaria); margin-bottom: 10px;">5+</div>
+                                <div style="color: var(--cor-texto);">Anos de Experiência</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2.5rem; font-weight: 700; color: var(--cor-primaria); margin-bottom: 10px;">1000+</div>
+                                <div style="color: var(--cor-texto);">Clientes Satisfeitos</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2.5rem; font-weight: 700; color: var(--cor-primaria); margin-bottom: 10px;">50+</div>
+                                <div style="color: var(--cor-texto);">Produtos Desenvolvidos</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2.5rem; font-weight: 700; color: var(--cor-primaria); margin-bottom: 10px;">27</div>
+                                <div style="color: var(--cor-texto);">Estados Atendidos</div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
     </main>
 
-     <footer>
+    <footer>
         <div class="footer-columns"></div>
-
         <div class="footer-bottom">
             <div class="copyright">
                 <p>© 2025 Astra Hardware. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Rai Moratto</p>
             </div>
         </div>
     </footer>

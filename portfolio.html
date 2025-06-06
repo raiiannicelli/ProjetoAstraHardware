@@ -10,18 +10,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-       <header>
+       <header style="background: var(--cor-primaria); padding: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
         <nav class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 24px;">
-            <div class="menu-left" style="display: flex; gap: 16px;">
-                <a class="menu-item" href="index.html">Home</a>
-                <a class="menu-item" href="portfolio.html">Portfólio</a>
-                <a class="menu-item" href="quem-somos.html">Quem Somos</a>
-                <a class="menu-item" href="trabalhe-conosco.html">Trabalhe Conosco</a>
-                <a class="menu-item" href="contato.html">Contato</a>
+            <div class="menu-left" style="display: flex; gap: 24px;">
+                <a class="menu-item" href="index.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Home</a>
+                <a class="menu-item" href="portfolio.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Portfólio</a>
+                <a class="menu-item" href="quem-somos.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Quem Somos</a>
+                <a class="menu-item" href="trabalhe-conosco.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Trabalhe Conosco</a>
+                <a class="menu-item" href="contato.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Contato</a>
             </div>
             <div class="logo-container" style="margin-left: auto;">
                 <a href="index.html">
-                    <img src="img/logo.png" alt="Astra Hardware" class="logo" style="height:48px; width:auto;">
+                    <img src="img/logo.png" alt="Astra Hardware" class="logo" style="height: 80px; width: auto;">
                 </a>
             </div>
         </nav>
@@ -31,74 +31,85 @@
         <h1>Portfólio de Produtos</h1>
         
         <div class="product-grid">
-            <div class="product-card">
-                <img src="img/produto1.png" alt="Placa-mãe Astra X570 Pro" class="img-rounded">
-                <h2>Placa-mãe Astra X570 Pro</h2>
-                <p>Placa-mãe de alto desempenho com suporte a PCIe 4.0, múltiplos slots M.2 e sistema de refrigeração avançado.</p>
-                <a class="btn btn-primary" href="portfolio.html">Saiba mais</a>
+            <div class="product-card" style="display: flex; flex-direction: column; height: 100%;">
+                <img src="img/produto1.png" alt="Placa-mãe Astra X570 Pro" class="img-rounded" style="width: 100%; height: 200px; object-fit: contain;">
+                <div style="padding: 20px; display: flex; flex-direction: column; flex: 1;">
+                    <h2 style="margin-bottom: 10px;">Placa-mãe Astra X570 Pro</h2>
+                    <p style="margin-bottom: 20px; flex: 1;">Placa-mãe de alto desempenho com suporte a PCIe 4.0, múltiplos slots M.2 e sistema de refrigeração avançado.</p>
+                    <a class="btn btn-primary" href="portfolio.html" style="margin-top: auto;">Saiba mais</a>
+                </div>
             </div>
 
-            <div class="product-card">
-                <img src="img/produto2.png" alt="Processador Astra Ryzen 9000X" class="img-rounded">
-                <h2>Processador Astra Ryzen 9000X</h2>
-                <p>Processador de última geração com 16 núcleos e 32 threads, ideal para gaming e trabalhos profissionais.</p>
-                <a class="btn btn-primary" href="portfolio.html">Saiba mais</a>
+            <div class="product-card" style="display: flex; flex-direction: column; height: 100%;">
+                <img src="img/produto2.png" alt="Processador Astra Ryzen 9000X" class="img-rounded" style="width: 100%; height: 200px; object-fit: contain;">
+                <div style="padding: 20px; display: flex; flex-direction: column; flex: 1;">
+                    <h2 style="margin-bottom: 10px;">Processador Astra Ryzen 9000X</h2>
+                    <p style="margin-bottom: 20px; flex: 1;">Processador de última geração com 16 núcleos e 32 threads, ideal para gaming e trabalhos profissionais.</p>
+                    <a class="btn btn-primary" href="portfolio.html" style="margin-top: auto;">Saiba mais</a>
+                </div>
             </div>
 
-            <div class="product-card">
-                <img src="img/produto3.png" alt="Placa de Vídeo Astra RTX 5080" class="img-rounded">
-                <h2>Placa de Vídeo Astra RTX 5080</h2>
-                <p>GPU topo de linha com 16GB GDDR7, Ray Tracing e tecnologia de resfriamento tri-fan.</p>
-                <a class="btn btn-primary" href="portfolio.html">Saiba mais</a>
+            <div class="product-card" style="display: flex; flex-direction: column; height: 100%;">
+                <img src="img/produto3.png" alt="Placa de Vídeo Astra RTX 5080" class="img-rounded" style="width: 100%; height: 200px; object-fit: contain;">
+                <div style="padding: 20px; display: flex; flex-direction: column; flex: 1;">
+                    <h2 style="margin-bottom: 10px;">Placa de Vídeo Astra RTX 5080</h2>
+                    <p style="margin-bottom: 20px; flex: 1;">GPU topo de linha com 16GB GDDR7, Ray Tracing e tecnologia de resfriamento tri-fan.</p>
+                    <a class="btn btn-primary" href="portfolio.html" style="margin-top: auto;">Saiba mais</a>
+                </div>
             </div>
 
-            <div class="product-card">
-                <img src="img/produto4.png" alt="Placa-mãe Astra B650M" class="img-rounded">
-                <h2>Placa-mãe Astra B650M</h2>
-                <p>Solução compacta mATX com excelente custo-benefício para builds de médio porte.</p>
-                <a class="btn btn-primary" href="portfolio.html">Saiba mais</a>
+            <div class="product-card" style="display: flex; flex-direction: column; height: 100%;">
+                <img src="img/produto4.png" alt="Placa-mãe Astra B650M" class="img-rounded" style="width: 100%; height: 200px; object-fit: contain;">
+                <div style="padding: 20px; display: flex; flex-direction: column; flex: 1;">
+                    <h2 style="margin-bottom: 10px;">Placa-mãe Astra B650M</h2>
+                    <p style="margin-bottom: 20px; flex: 1;">Solução compacta mATX com excelente custo-benefício para builds de médio porte.</p>
+                    <a class="btn btn-primary" href="portfolio.html" style="margin-top: auto;">Saiba mais</a>
+                </div>
             </div>
 
-            <div class="product-card">
-                <img src="img/produto5.png" alt="Processador Astra i9-14900K" class="img-rounded">
-                <h2>Processador Astra i9-14900K</h2>
-                <p>CPU de alta performance com 24 núcleos, perfeito para workstations e servidores.</p>
-                <a class="btn btn-primary" href="portfolio.html">Saiba mais</a>
+            <div class="product-card" style="display: flex; flex-direction: column; height: 100%;">
+                <img src="img/produto5.png" alt="Processador Astra i9-14900K" class="img-rounded" style="width: 100%; height: 200px; object-fit: contain;">
+                <div style="padding: 20px; display: flex; flex-direction: column; flex: 1;">
+                    <h2 style="margin-bottom: 10px;">Processador Astra i9-14900K</h2>
+                    <p style="margin-bottom: 20px; flex: 1;">CPU de alta performance com 24 núcleos, perfeito para workstations e servidores.</p>
+                    <a class="btn btn-primary" href="portfolio.html" style="margin-top: auto;">Saiba mais</a>
+                </div>
             </div>
 
-            <div class="product-card">
-                <img src="img/produto6.png" alt="Placa de Vídeo Astra RX 8900" class="img-rounded">
-                <h2>Placa de Vídeo Astra RX 8900</h2>
-                <p>GPU AMD com tecnologia FSR 3.0 e 20GB de memória para gaming em 4K.</p>
-                <a class="btn btn-primary" href="portfolio.html">Saiba mais</a>
+            <div class="product-card" style="display: flex; flex-direction: column; height: 100%;">
+                <img src="img/produto6.png" alt="Placa de Vídeo Astra RX 8900" class="img-rounded" style="width: 100%; height: 200px; object-fit: contain;">
+                <div style="padding: 20px; display: flex; flex-direction: column; flex: 1;">
+                    <h2 style="margin-bottom: 10px;">Placa de Vídeo Astra RX 8900</h2>
+                    <p style="margin-bottom: 20px; flex: 1;">GPU AMD com tecnologia FSR 3.0 e 20GB de memória para gaming em 4K.</p>
+                    <a class="btn btn-primary" href="portfolio.html" style="margin-top: auto;">Saiba mais</a>
+                </div>
             </div>
 
-            <div class="product-card">
-                <img src="img/produto7.png" alt="Placa-mãe Astra Z790" class="img-rounded">
-                <h2>Placa-mãe Astra Z790</h2>
-                <p>Placa premium com suporte DDR5, WiFi 6E e áudio de alta definição.</p>
-                <a class="btn btn-primary" href="portfolio.html">Saiba mais</a>
+            <div class="product-card" style="display: flex; flex-direction: column; height: 100%;">
+                <img src="img/produto7.png" alt="Placa-mãe Astra Z790" class="img-rounded" style="width: 100%; height: 200px; object-fit: contain;">
+                <div style="padding: 20px; display: flex; flex-direction: column; flex: 1;">
+                    <h2 style="margin-bottom: 10px;">Placa-mãe Astra Z790</h2>
+                    <p style="margin-bottom: 20px; flex: 1;">Placa premium com suporte DDR5, WiFi 6E e áudio de alta definição.</p>
+                    <a class="btn btn-primary" href="portfolio.html" style="margin-top: auto;">Saiba mais</a>
+                </div>
             </div>
 
-            <div class="product-card">
-                <img src="img/produto8.png" alt="Processador Astra R5-8600G" class="img-rounded">
-                <h2>Processador Astra R5-8600G</h2>
-                <p>APU com gráficos integrados RDNA 3, ideal para sistemas compactos.</p>
-                <a class="btn btn-primary" href="portfolio.html">Saiba mais</a>
+            <div class="product-card" style="display: flex; flex-direction: column; height: 100%;">
+                <img src="img/produto8.png" alt="Processador Astra R5-8600G" class="img-rounded" style="width: 100%; height: 200px; object-fit: contain;">
+                <div style="padding: 20px; display: flex; flex-direction: column; flex: 1;">
+                    <h2 style="margin-bottom: 10px;">Processador Astra R5-8600G</h2>
+                    <p style="margin-bottom: 20px; flex: 1;">APU com gráficos integrados RDNA 3, ideal para sistemas compactos.</p>
+                    <a class="btn btn-primary" href="portfolio.html" style="margin-top: auto;">Saiba mais</a>
+                </div>
             </div>
 
-            <div class="product-card">
-                <img src="img/produto9.png" alt="Placa de Vídeo Astra GTX 4060" class="img-rounded">
-                <h2>Placa de Vídeo Astra GTX 4060</h2>
-                <p>GPU de médio porte com ótimo custo-benefício para gaming em 1440p.</p>
-                <a class="btn btn-primary" href="portfolio.html">Saiba mais</a>
-            </div>
-
-            <div class="product-card">
-                <img src="img/placaDeVideo_rtx5080.png" alt="Kit Upgrade Astra" class="img-rounded">
-                <h2>Kit Upgrade Astra</h2>
-                <p>Combo com placa-mãe, processador e memória RAM para upgrade completo.</p>
-                <a class="btn btn-primary" href="portfolio.html">Saiba mais</a>
+            <div class="product-card" style="display: flex; flex-direction: column; height: 100%;">
+                <img src="img/produto9.png" alt="Placa de Vídeo Astra GTX 4060" class="img-rounded" style="width: 100%; height: 200px; object-fit: contain;">
+                <div style="padding: 20px; display: flex; flex-direction: column; flex: 1;">
+                    <h2 style="margin-bottom: 10px;">Placa de Vídeo Astra GTX 4060</h2>
+                    <p style="margin-bottom: 20px; flex: 1;">GPU de médio porte com ótimo custo-benefício para gaming em 1440p.</p>
+                    <a class="btn btn-primary" href="portfolio.html" style="margin-top: auto;">Saiba mais</a>
+                </div>
             </div>
         </div>
 
@@ -128,6 +139,7 @@
         <div class="footer-bottom">
             <div class="copyright">
                 <p>© 2025 Astra Hardware. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Rai Moratto</p>
             </div>
         </div>
     </footer>
