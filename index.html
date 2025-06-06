@@ -12,20 +12,25 @@
 </head>
 <body>
     <header style="background: var(--cor-primaria); padding: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-        <nav class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 24px;">
-            <div class="menu-left" style="display: flex; gap: 24px;">
-                <a class="menu-item" href="index.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Home</a>
-                <a class="menu-item" href="portfolio.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Portfólio</a>
-                <a class="menu-item" href="quem-somos.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Quem Somos</a>
-                <a class="menu-item" href="trabalhe-conosco.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Trabalhe Conosco</a>
-                <a class="menu-item" href="contato.html" style="color: white; font-size: 1.1rem; font-weight: 500; text-decoration: none; transition: opacity 0.3s;">Contato</a>
+        <div class="container">
+            <div class="menu-left">
+                <div class="logo-container">
+                    <img src="img/logo.png" alt="Logo Astra" class="logo">
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="main-nav">
+                    <a href="index.html" class="menu-item active">Home</a>
+                    <a href="quem-somos.html" class="menu-item">Quem Somos</a>
+                    <a href="portfolio.html" class="menu-item">Portfólio</a>
+                    <a href="trabalhe-conosco.html" class="menu-item">Trabalhe Conosco</a>
+                    <a href="contato.html" class="menu-item">Contato</a>
+                </nav>
             </div>
-            <div class="logo-container" style="margin-left: auto;">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="Astra Hardware" class="logo" style="height: 80px; width: auto;">
-                </a>
-            </div>
-        </nav>
+        </div>
     </header>
 
     <main>
@@ -187,5 +192,89 @@
     </footer>
 
     <script src="js/navigation.js"></script>
+    <style>
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            z-index: 1000;
+        }
+
+        .mobile-menu-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #ffffff;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .main-nav {
+                display: none;
+                width: 100%;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: var(--cor-primaria);
+                padding: 1rem 0;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .main-nav.active {
+                display: block;
+            }
+
+            .menu-item {
+                display: block;
+                padding: 12px 20px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .menu-item:last-child {
+                border-bottom: none;
+            }
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+
+            menuToggle.addEventListener('click', function() {
+                mainNav.classList.toggle('active');
+                this.classList.toggle('active');
+            });
+
+            // Fechar menu ao clicar em um item
+            const menuItems = document.querySelectorAll('.menu-item');
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        mainNav.classList.remove('active');
+                        menuToggle.classList.remove('active');
+                    }
+                });
+            });
+
+            // Fechar menu ao redimensionar a janela
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    mainNav.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
